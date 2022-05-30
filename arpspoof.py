@@ -132,7 +132,7 @@ def main():
     except Exception as e:
         # Exception most likely because get_MAC failed, check if -t or -g are
         # actually valid IP addresses
-        print (e.message)
+        print (e)
         sys.exit(1)
 
     # same as above, gateway is a (IP, MAC) tuple
@@ -140,7 +140,7 @@ def main():
         # args.gateway is a single IP address
         gateway = (args.gateway, get_MAC(interface, args.gateway))
     except Exception as e:
-        print (e.message)
+        print (e)
         sys.exit(2)
 
     # create and start the poison thread
