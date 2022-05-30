@@ -1,4 +1,7 @@
 #!/usr/bin/env python2
+# This was originally made by ickerwx on Github
+# I just converted it to Python 3
+# Original Code: https://github.com/ickerwx/arpspoof
 import sys
 import argparse
 import threading
